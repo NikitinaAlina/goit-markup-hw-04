@@ -132,14 +132,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.desc {
-  padding-top: 120px;
-}
-.desc-icon {
-  padding: 24px 100px;
-  background: #f4f4fd;
-  border-radius: 4px;
-}
+
 .title {
   font-weight: 700;
   font-size: 56px;
@@ -246,12 +239,27 @@ img {
   border: 1px solid #e7e9fc;
   border-top: 0;
 }
-
+.desc {
+  padding-top: 120px;
+}
+.desc-icon {
+  padding: 24px 100px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
 .item-idea {
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
+.box-icon {
+  display: flex;
+  max-width: 112px;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+
 .list-menu {
   margin-bottom: 8px;
   max-width: 264px;
@@ -345,19 +353,15 @@ img {
 }
 .customers-list {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
   gap: 24px;
+  justify-content: center;
 }
+
 .customers-text {
-  max-height: 168px;
-  max-width: 88px;
-  gap: 24px;
-  color: #8e8f99;
-  margin: 32px 16px;
+  flex-basis: calc((100% - 120px) / 6);
 }
 .customers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .customers-link:hover {
   color: #404bbf;
@@ -458,4 +462,5 @@ img {
 }
 .footer-content {
   display: flex;
+  gap: 120px;
 }
